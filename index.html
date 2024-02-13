@@ -43,10 +43,14 @@
           <figure><img src="assets/images/rectangle.png" /></figure>
           <div class="card-body">
             <h2 class="card-title">Rectangle</h2>
-            <p>Area (A) = w X I</p>
+            <p class="text-3xl text-center">Area (A) = w X I</p>
             <div class="flex">
-              <input type="text" placeholder="width" class="w-24 text-2xl p-2 rounded-sm bg-gray-300"> <span class="mr-4 ml-2">cm</span>
-              <input type="text" placeholder="length" class="w-24 text-2xl p-2 rounded-sm bg-gray-300"> <span>cm</span>
+              <input type="text" placeholder="length" id="rectangle-length" class="w-24 text-2xl p-2 rounded-sm bg-gray-300"> <span
+                class="mr-4 ml-2">cm</span>
+              <input type="text" placeholder="width" id="rectangle-width" class="w-24 text-2xl p-2 rounded-sm bg-gray-300"> <span>cm</span>
+            </div>
+            <div>
+              <p class="text-2xl" >Area: <span id="rectangle-area">0</span><span>cm</span><sup>2</sup></p>
             </div>
             <div class="card-actions justify-end">
               <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
